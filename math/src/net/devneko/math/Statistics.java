@@ -14,7 +14,7 @@ public class Statistics {
 		double avg = average(datas);
 		double sum = 0;
 		for ( double d : datas ) {
-			double diff = (sum - avg);
+			double diff = (d - avg);
 			sum += diff * diff;
 		}
 		return sum / datas.length;
